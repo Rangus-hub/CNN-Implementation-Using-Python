@@ -20,12 +20,17 @@ used to form single layer and multilayered neural networks.
 ![perceptron](https://user-images.githubusercontent.com/84243839/178183839-d2bacbb2-644c-445a-a096-9e3ae7aec85a.png)
 
 It is important to brief about the various parts of the perceptron before moving ahead.
+
 The perceptron itself, consists of weights, the summation processor, and an activation function, and 
-an adjustable threshold processor called 
+an adjustable threshold processor called bias.
 
--> Weights act as the main inputs to the perceptron
+-> Here the bias is the input 1, it can be thought of as a tendency towards a particular way of behaving.
+   It can also be said that the bias is the internal systematic error of the neural network caused by itself
+   in calculating the output.
 
-->
+-> The activation function is the non linear transformation. It decides whether the perceptron should fire or not.
+   Sigmoid function and Step function are examples of activation functions.  
+
 
 In mathematics (in particular, functional analysis), convolution is a mathematical operation on 
 two functions(say f and g) that produces a third function(f*g) that expresses how the shape of one
