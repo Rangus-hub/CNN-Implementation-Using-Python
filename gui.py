@@ -38,8 +38,7 @@ cv2.ocl.setUseOpenCL(False)
 emotion_dict = {0: "   Angry   ", 1: "Disgusted", 2: "  Fearful  ", 3: "   Happy   ", 4: "  Neutral  ", 5: "    Sad    ", 6: "Surprised"}
 
 
-#emoji_dist={0:"./emojis/angry.png",2:"./emojis/disgusted.png",2:"./emojis/fearful.png",3:"./emojis/happy.png",4:"./emojis/neutral.png",5:"./emojis/sad.png",6:"./emojis/surpriced.png"}
-#emoji_dist={0:"./emojis/angry.png",1:"./emojis/disgusted.png",2:"./emojis/fearful.png",3:"./emojis/happy.png",4:"./emojis/neutral.png",5:"./emojis/sad.png",6:"./emojis/surpriced.png"}
+
 emoji_dist={0:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/angry.png",1:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/disgusted.png",2:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/fearful.png",3:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/happy.png",4:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/neutral.png",5:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/sad.png",6:"D:/Dev/py_proj/emojify/emoji-creator-project-code/emojis/surpriced.png"}
 global last_frame1                                    
 last_frame1 = np.zeros((480, 640, 3), dtype=np.uint8)
@@ -52,9 +51,7 @@ def show_vid():
         print("cant open the camera1")
     flag1, frame1 = cap1.read()
     frame1 = cv2.resize(frame1,(560,500))
-    #frame1 = cv2.resize(frame1,(600,500))
-
-    #bounding_box = cv2.CascadeClassifier('/home/shivam/.local/lib/python3.6/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+    
     bounding_box = cv2.CascadeClassifier('D:/Anaconda3/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml')
     gray_frame = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
     num_faces = bounding_box.detectMultiScale(gray_frame,scaleFactor=1.3, minNeighbors=5)
@@ -66,7 +63,7 @@ def show_vid():
         prediction = emotion_model.predict(cropped_img)
         
         maxindex = int(np.argmax(prediction))
-        # cv2.putText(frame1, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
+
         show_text[0]=maxindex
     if flag1 is None:
         print ("Major error!")
