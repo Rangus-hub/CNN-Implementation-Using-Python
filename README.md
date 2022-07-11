@@ -140,7 +140,6 @@ emotion_model_info = emotion_model.fit_generator(
         train_generator,
         steps_per_epoch=28709 // 64,
         epochs=50,
-        #epochs = 1,
         validation_data=validation_generator,
         validation_steps=7178 // 64)
 
@@ -311,15 +310,3 @@ show_vid2()
 root.mainloop()
 
 ***************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
