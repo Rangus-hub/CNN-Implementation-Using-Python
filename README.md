@@ -19,7 +19,13 @@ used to form single layer and multilayered neural networks.
 
 ![perceptron](https://user-images.githubusercontent.com/84243839/178183839-d2bacbb2-644c-445a-a096-9e3ae7aec85a.png)
 
+It is important to brief about the various parts of the perceptron before moving ahead.
+The perceptron itself, consists of weights, the summation processor, and an activation function, and 
+an adjustable threshold processor called 
 
+-> Weights act as the main inputs to the perceptron
+
+->
 
 In mathematics (in particular, functional analysis), convolution is a mathematical operation on 
 two functions(say f and g) that produces a third function(f*g) that expresses how the shape of one
