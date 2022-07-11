@@ -8,9 +8,7 @@ from keras.optimizers import Adam
 from keras.layers import MaxPooling2D
 from keras.preprocessing.image import ImageDataGenerator
 
-#train_dir = 'data/train'
 train_dir = 'D:/Dev/py_proj/emojify/archive/train'
-#val_dir = 'data/test'
 val_dir = 'D:/Dev/py_proj/emojify/archive/test'
 train_datagen = ImageDataGenerator(rescale=1./255)
 val_datagen = ImageDataGenerator(rescale=1./255)
