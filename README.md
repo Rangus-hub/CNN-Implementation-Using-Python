@@ -56,6 +56,8 @@ In this project the CNN model using python will be built that recognizes facial 
 avatar associated to that emotion. The model is trained on a dataset of images to classify facial expressions 
 and mapping of the expression to an avatar/emoji is done.
 
+![Screenshot (130)](https://user-images.githubusercontent.com/84243839/178207888-11eba9b2-91f6-4eb5-b7b0-152584ee21f5.png)
+
 DATASET
 
 The model works on FER2013 which is a dataset of 48 * 48 pixel grayscale face images. This dataset consists of
