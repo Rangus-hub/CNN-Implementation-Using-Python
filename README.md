@@ -77,7 +77,7 @@ CODE
 Make a train.py file and include the following code in it:
 
 ***************************************************************
-
+'''
 import numpy as np
 import cv2
 #from keras.emotion_models import Sequential
@@ -171,13 +171,13 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
+'''
 ****************************************************************
 
 Now make a gui.py file and add the following code:
 
 *****************************************************************
-
+'''
 import tkinter as tk
 from tkinter import *
 import cv2
@@ -308,5 +308,5 @@ if __name__ == '__main__':
 show_vid()
 show_vid2()
 root.mainloop()
-
+'''
 ***************************************************************
