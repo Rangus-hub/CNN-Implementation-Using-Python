@@ -70,7 +70,10 @@ There will be 2 files, train.py to train the model and gui.py file to create an 
 Important libraries that are used are:
 
 Numpy library,
+
 Keras: It is a deep learning API written in Python, running on top of the machine learning platform TensorFlow.
+
 OpenCV: It is an image processing library, where AI algorithms can be used for image recognition and processing.
+
 Tkinter: To build GUI.
 
